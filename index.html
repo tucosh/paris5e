@@ -1,39 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Paris cinquième</title>
-    <style>
-        body {
-            /* Specify the path to your image inside url('...') */
-            background-image: url('paris5e image.jpg');
+  <meta
+    name="description"
+    content="French lessons with a native Parisian. Private and small-group lessons, conversation meetups, exam preparation, and more."
+  >
+  <title>Paris Cinquième | French Lessons</title>
 
-            /* Prevents the image from repeating like a grid */
-            background-repeat: no-repeat;
+  <style>
+    :root {
+      --ink: #233238;
+      --muted-ink: #536166;
+      --paper: #fffdf9;
+      --accent: #8b4438;
+      --accent-dark: #71362d;
+      --border: #e6ded4;
+    }
 
-            /* Scales the image to cover the entire screen */
-            background-size: cover;
+    * {
+      box-sizing: border-box;
+    }
 
-            /* Centers the image on the screen */
-            background-position: center;
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
 
-            /* Keeps the background fixed in place while scrolling */
-            background-attachment: fixed;
-        }
-    </style>
+    .hero {
+      min-height: 390px;
+      display: grid;
+      place-items: center;
+      padding: 56px 20px;
+      text-align: center;
+      background:
+        linear-gradient(rgba(27, 38, 41, 0.30), rgba(27, 38, 41, 0.42)),
+        url("paris5e image.jpg") center 48% / cover no-repeat;
+    }
+
+    .hero-content {
+      width: min(100%, 760px);
+      padding: 34px 28px;
+      color: white;
+      background: rgba(35, 50, 56, 0.52);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 7vw, 4.5rem);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      margin: 16px 0 0;
+      font-size: clamp(1.15rem, 3vw, 1.55rem);
+    }
+
+    main {
+      width: min(100% - 40px, 760px);
+      margin: 0 auto;
+      padding: 48px 0 56px;
+    }
+
+    .intro {
+      margin: 0 auto 34px;
+      max-width: 620px;
+      text-align: center;
+      font-size: 1.15rem;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--accent-dark);
+      font-size: 1.55rem;
+      font-weight: 500;
+    }
+
+    .services {
+      margin-bottom: 38px;
+    }
+
+    .services ul {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .services li {
+      margin: 7px 0;
+    }
+
+    .story {
+      padding: 24px 26px;
+      background: #f5f0e9;
+      border-left: 4px solid var(--accent);
+    }
+
+    .story p {
+      margin: 0;
+    }
+
+    .credentials {
+      margin: 30px 0;
+      color: var(--muted-ink);
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 11px 20px;
+      color: white;
+      background: var(--accent);
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact a:hover,
+    .contact a:focus-visible {
+      background: var(--accent-dark);
+    }
+
+    footer {
+      padding: 18px 20px;
+      color: var(--muted-ink);
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      .hero {
+        min-height: 330px;
+        padding: 30px 16px;
+      }
+
+      .hero-content {
+        padding: 28px 18px;
+      }
+
+      main {
+        width: min(100% - 32px, 760px);
+        padding-top: 36px;
+      }
+
+      .story {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding: 15vh 1rem">
-  <h1>Welcome to Paris Cinquième!</h1>
-  <p>The Fifth ("cinquième") arrondissment of Paris is the heart of left the bank. It is the oldest 20 arrondissments, dating to Roman times. It is known for its cafés, narrow winding streets and student life.</p>
-  <p>At paris5e.com, we offer French instruction for all levels:</p>
-  <ul>
-    <li>Private, personalised French tutoring</li>
-    <li>Group French lessons</li>
-    <li>French conversation meetups</li>
-    <li>Tutoring for specific needs: travel, business, social etc.</li>
-    <li>AP and TEF exam preparation</li>
-    <li>Customise curriculums for businesses</li>
-  </ul>
+
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Paris Cinquième</h1>
+      <p class="tagline">French lessons with a native Parisian</p>
+    </div>
+  </header>
+
+  <main>
+    <p class="intro">
+      Build confidence in French through personal, engaging lessons
+      tailored to your goals.
+    </p>
+
+    <section class="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Lessons and services</h2>
+      <ul>
+        <li>Private lessons for all levels</li>
+        <li>Small-group lessons and conversation meetups</li>
+        <li>French for travel, business, and everyday life</li>
+        <li>AP and TEF exam preparation</li>
+        <li>Business lessons and translation services</li>
+      </ul>
+    </section>
+
+    <section class="story" aria-labelledby="story-heading">
+      <h2 id="story-heading">Why “Paris Cinquième”?</h2>
+      <p>
+        <em>Cinquième</em> means “fifth” in French. The 5th arrondissement
+        is a historic neighborhood on Paris’s Left Bank—and the area I
+        grew up. It’s the inspiration behind my name and my love of
+        sharing French language and culture.
+      </p>
+    </section>
+
+    <p class="credentials">
+      Native Parisian &middot; HEC Business School graduate
+      &middot; Experienced French teacher
+    </p>
+
+    <section class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in touch</h2>
+      <a href="mailto:paris5econversation@gmail.com">
+        paris5econversation@gmail.com
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    Paris Cinquième
+  </footer>
 </body>
 </html>
