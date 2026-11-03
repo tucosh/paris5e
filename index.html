@@ -31,16 +31,16 @@
       line-height: 1.6;
     }
 
-    .hero {
-      min-height: 390px;
-      display: grid;
-      place-items: center;
-      padding: 56px 20px;
-      text-align: center;
-      background:
-        linear-gradient(rgba(27, 38, 41, 0.30), rgba(27, 38, 41, 0.42)),
-        url("paris5e%20image.jpg") center bottom / cover no-repeat;
-    }
+.hero {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  text-align: center;
+  background:
+    linear-gradient(rgba(27, 38, 41, 0.30), rgba(27, 38, 41, 0.42)),
+    url("paris5e%20image.jpg") center / 100% 100% no-repeat;
+}
 
     .hero-content {
       width: min(100%, 760px);
@@ -142,10 +142,10 @@
     }
 
     @media (max-width: 520px) {
-      .hero {
-        min-height: 330px;
-        padding: 30px 16px;
-      }
+.hero {
+  min-height: 0;
+  padding: 20px 16px;
+}
 
       .hero-content {
         padding: 28px 18px;
